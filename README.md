@@ -11,6 +11,7 @@ This guide will walk you through installing a barebones, functional Arch Linux s
 6. [Post-Installation](#post-installation)
 7. [Troubleshooting](#troubleshooting)
 8. [Additional Resources](#additional-resources)
+9. [Setup & Customization](https://github.com/wazeerc/arch/blob/main/SETUP.md) ➕
 
 ---
 
