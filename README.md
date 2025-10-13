@@ -424,7 +424,7 @@ pacman -Ss search_term
 sudo pacman -R package_name
 
 # System info
-neofetch          # Install with: sudo pacman -S neofetch
+fastfetch          # Install with: sudo pacman -S fastfetch
 
 # Disk usage
 df -h
