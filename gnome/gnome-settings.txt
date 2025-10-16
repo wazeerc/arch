@@ -290,6 +290,7 @@ workspace-indicator=false
 name=''
 
 [org/gnome/shell/keybindings]
+show-screenshot-ui=['<Shift><Super>s']
 switch-to-application-1=@as []
 switch-to-application-2=@as []
 switch-to-application-3=@as []
