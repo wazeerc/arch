@@ -105,7 +105,7 @@ monospace-font-name='Maple Mono NF 11'
 text-scaling-factor=1.0
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-ptyxis', 'org-gnome-software', 'org-freedesktop-problems-applet', 'org-mozilla-firefox', 'ulauncher', 'org-gnome-nautilus', 'org-gnome-extensions']
+application-children=['org-gnome-ptyxis', 'org-gnome-software', 'org-freedesktop-problems-applet', 'org-gnome-nautilus', 'org-gnome-extensions']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
@@ -146,6 +146,8 @@ close=['<Super>q']
 move-to-workspace-1=['<Super><Shift>1']
 move-to-workspace-2=['<Super><Shift>2']
 move-to-workspace-3=['<Super><Shift>3']
+switch-input-source=@as []
+switch-input-source-backward=@as []
 switch-to-workspace-1=['<Super>1']
 switch-to-workspace-2=['<Super>2']
 switch-to-workspace-3=['<Super>3']
@@ -178,10 +180,11 @@ enable-smartcard-authentication=false
 
 [org/gnome/mutter]
 dynamic-workspaces=false
+edge-tiling=false
 overlay-key='Super_L'
 
 [org/gnome/nautilus/icon-view]
-default-zoom-level='small-plus'
+default-zoom-level='small'
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
@@ -189,7 +192,6 @@ migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 633)
 initial-size-file-chooser=(890, 550)
 
 [org/gnome/settings-daemon/plugins/color]
@@ -201,8 +203,8 @@ home=['<Super>e']
 
 [org/gnome/shell]
 disabled-extensions=['background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['switcher@landau.fi', 'clipboard-indicator@tudmotu.com', 'hidetopbar@mathieu.bidon.ca', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'AlphabeticalAppGrid@stuarthayhurst']
-favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Ptyxis.desktop']
+enabled-extensions=['switcher@landau.fi', 'clipboard-indicator@tudmotu.com', 'hidetopbar@mathieu.bidon.ca', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'impatience@gfxmonk.net', 'AlphabeticalAppGrid@stuarthayhurst', 'tiling-assistant@leleat-on-github']
+favorite-apps=['app.zen_browser.zen.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Ptyxis.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='48.0'
 
@@ -248,6 +250,7 @@ force-light-text=false
 override-background=true
 pipeline='pipeline_default'
 static-blur=true
+style-panel=1
 unblur-in-overview=true
 
 [org/gnome/shell/extensions/blur-my-shell/screenshot]
@@ -271,13 +274,16 @@ enable-active-window=true
 enable-intellihide=true
 mouse-sensitive=false
 
+[org/gnome/shell/extensions/net/gfxmonk/impatience]
+speed-factor=0.5
+
 [org/gnome/shell/extensions/switcher]
 fade-enable=true
 font-size=uint32 16
 icon-size=uint32 20
 launcher-stats='{"org.gnome.Extensions.desktop":11,"org.gnome.Ptyxis.desktop":10,"org.gnome.Settings.desktop":7,"org.gnome.Nautilus.desktop":2,"org.gnome.tweaks.desktop":13,"org.mozilla.firefox.desktop":4}'
 matching=uint32 0
-max-width-percentage=uint32 28
+max-width-percentage=uint32 25
 on-active-display=true
 only-current-workspace=false
 ordering=uint32 0
@@ -285,6 +291,52 @@ show-executables=false
 show-original-names=false
 show-switcher=['<Alt>space']
 workspace-indicator=false
+
+[org/gnome/shell/extensions/tiling-assistant]
+activate-layout0=@as []
+activate-layout1=@as []
+activate-layout2=@as []
+activate-layout3=@as []
+auto-tile=@as []
+center-window=['<Alt><Super>period']
+debugging-free-rects=@as []
+debugging-show-tiled-rects=@as []
+default-move-mode=0
+dynamic-keybinding-behavior=0
+enable-tiling-popup=true
+focus-hint=0
+focus-hint-color='rgb(145,65,172)'
+import-layout-examples=false
+last-version-installed=53
+maximize-with-gap=true
+monitor-switch-grace-period=false
+overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.unmaximize': <@mb nothing>}
+restore-window=['<Super>Down']
+search-popup-layout=@as []
+single-screen-gap=8
+tile-bottom-half=@as []
+tile-bottom-half-ignore-ta=@as []
+tile-bottomleft-quarter=@as []
+tile-bottomleft-quarter-ignore-ta=@as []
+tile-bottomright-quarter=@as []
+tile-bottomright-quarter-ignore-ta=@as []
+tile-edit-mode=@as []
+tile-left-half=@as []
+tile-left-half-ignore-ta=@as []
+tile-maximize=@as []
+tile-maximize-horizontally=@as []
+tile-maximize-vertically=@as []
+tile-right-half=@as []
+tile-right-half-ignore-ta=@as []
+tile-top-half=@as []
+tile-top-half-ignore-ta=@as []
+tile-topleft-quarter=@as []
+tile-topleft-quarter-ignore-ta=@as []
+tile-topright-quarter=@as []
+tile-topright-quarter-ignore-ta=@as []
+toggle-always-on-top=@as []
+toggle-tiling-popup=@as []
+window-gap=8
 
 [org/gnome/shell/extensions/user-theme]
 name=''
@@ -294,6 +346,7 @@ show-screenshot-ui=['<Shift><Super>s']
 switch-to-application-1=@as []
 switch-to-application-2=@as []
 switch-to-application-3=@as []
+toggle-application-view=['<Super>a']
 
 [org/gnome/shell/world-clocks]
 locations=@av []
