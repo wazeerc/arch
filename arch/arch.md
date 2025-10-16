@@ -11,7 +11,7 @@ This guide will walk you through installing a barebones, functional Arch Linux s
 6. [Post-Installation](#post-installation)
 7. [Troubleshooting](#troubleshooting)
 8. [Additional Resources](#additional-resources)
-9. [Setup & Customization](https://github.com/wazeerc/arch/blob/main/SETUP.md) ➕
+9. [Setup & Customization](https://github.com/wazeerc/linux/blob/main/arch/SETUP.md) ➕
 
 ---
 
@@ -438,3 +438,4 @@ journalctl -xe
 **Congratulations! You now have a functional Arch Linux system with Hyprland and KDE Plasma!** 🎉
 
 Feel free to explore, customize, and enjoy your new Arch Linux installation. Remember: the Arch Wiki is your best friend for any additional configuration or troubleshooting.
+
